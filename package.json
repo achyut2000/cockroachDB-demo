@@ -1,0 +1,25 @@
+{
+  "name": "cockroachdb-demo",
+  "version": "1.0.0",
+  "description": "Implementation of cockroachDB using sequelize",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx nodemon ./service/like-share-app.js"
+  },
+  "author": "Pavan Achyut <medehalachyut@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "@fastify/autoload": "5.6.0",
+    "@fastify/cors": "8.4.1",
+    "@fastify/formbody": "7.4.0",
+    "fastify": "4.29.0",
+    "fastify-cli": "7.3.0",
+    "fastify-multipart": "5.3.1",
+    "fastify-plugin": "4.5.1",
+    "fastify-sensible": "3.1.0",
+    "sequelize": "^6.33.0",
+    "sequelize-cockroachdb": "6.0.5",
+    "cls-hooked": "4.2.2"
+  }
+}
