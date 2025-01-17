@@ -5,9 +5,9 @@ const AutoLoad = require('@fastify/autoload');
 const path = require('path');
 
 class LikeShareApp {
-  static async getFastifyInstance(fastify) {
+  static async getFastifyInstance() {
     try {
-      const app = Fastify({ disableRequestLogging: true });
+      const app = Fastify({ logger: true, disableRequestLogging: true });
       app.register(fastifyFormBody);
       app.register(AutoLoad, {
         dir: path.join(__dirname, 'routes'),
