@@ -1,7 +1,7 @@
 /* global logger */
 const path = require('path');
 const fs = require('fs');
-const Sequelize = require('sequelize');
+const Sequelize = require('sequelize-cockroachdb');
 const dbConnectionMap = require('../index');
 const dbNames = require('../db-names');
 

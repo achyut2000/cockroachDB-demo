@@ -1,4 +1,4 @@
-const { Model } = require('sequelize');
+const { Model } = require('sequelize-cockroachdb');
 
 module.exports = (sequelize, DataTypes) => {
   const followerSchema = require('./schema/followers')(DataTypes);
