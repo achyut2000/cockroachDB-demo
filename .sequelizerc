@@ -1,0 +1,9 @@
+const path = require('path');
+const targetDatabase = process.env.DATABASE;
+
+module.exports = {
+    "config": path.resolve(`./service/sequelize/config/${targetDatabase}-config.js`),
+    "models-path": path.resolve(`./service/sequelize/models/${targetDatabase}`),
+    "seeders-path": path.resolve(`./service/sequelize/seeders/${targetDatabase}`),
+    "migrations-path": path.resolve(`./service/sequelize/migrations/${targetDatabase}`)
+};
